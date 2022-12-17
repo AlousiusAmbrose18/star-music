@@ -1,0 +1,341 @@
+
+body {
+  height: 2000px;
+  scroll-behavior: smooth;
+}
+nav{
+    background-color: white;
+    width: auto;
+    height: 80px;
+    border: solid 1px rgb(204, 204, 204);
+    
+ }
+
+ #logoBlock img{
+  width:80px; 
+  height:40px;
+  border-radius: 5px;
+ }
+
+.nav-item .nav-join-btn{
+  border: 1px solid #6a3cae;
+  border-radius: 10px;
+  color: #6a3cae;
+  background-color: white;
+  padding: 5px;
+  margin-left: 45px;
+}
+
+.nav-item .nav-join-btn:hover{
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: #6a3cae;
+
+}
+
+a:link {
+  color: #6a3cae;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  display: inline-block;
+  padding: 5px 10px;
+  margin-left: 50px;
+  position: relative;
+}
+a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 25%;
+  position: absolute;
+  background: #6a3cae;
+  transition: width 0.8s ease 0s, left 0.8s ease 0s;
+  width: 0;
+}
+a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+/* --------------------------------------------------------------------------------   */
+.box1{
+  padding: 15px;
+  background-image: linear-gradient(#5e1ebe,#8013b3,#9a1da5ee);
+}
+
+.main-h2{
+  color: white;
+  margin-top: 20px;
+  text-align: center;
+}
+.main-para{
+  margin-top: 20px;
+  color: white;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.box1 .nav-join-btn{
+  border-radius: 5px;
+  background-color: white;
+  padding: 5px 30px 5px 30px;
+  border: none;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 30px;
+  color: #4f00c5;
+  font-weight: bold;
+  
+}
+
+.box1 .nav-join-btn:hover{
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: transparent;
+  color: white;
+}
+
+ .carousel-wrapper {
+  width: 720px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 10px rgba(247, 247, 247, 0.5);
+  border-radius: 5px;
+  margin: 25px auto 20px;
+  background-color: rgb(238, 238, 238);
+}
+
+.carousel-container {
+  width: 650px;
+  height: 250px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.carousel {
+  display: flex;
+  width: 2000px;
+  animation: sliding 15s infinite;  
+}
+.carousel div {
+  width: 650px;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+}
+.carousel:hover {
+  animation-play-state: paused;
+}
+
+.carousel img{
+  width: 650px;
+  height: 250px;
+}
+
+
+
+@keyframes sliding {
+  30% {
+    transform: translateX(0);
+  }
+  35% {
+    transform: translateX(-650px);
+  }
+  65% {
+    transform: translateX(-650px);
+  }
+  70% {
+    transform: translateX(-1300px);
+  }
+  98% {
+    transform: translateX(-1300px);
+  }
+  100% {
+    transform: translateX(-650px);
+  }
+}
+
+ @media screen and (min-width: 600px) {
+  #menu img{
+    display: none;
+  }
+  
+}
+
+@media screen and (max-width: 768px) {
+
+  #menu img{
+    width:40px;
+    height:40px;
+    border-radius: 5px;
+    border:solid 1px rgb(211, 211, 211);
+  }
+
+  .carousel-wrapper {
+    width: 320px;
+    height: 170px;
+  }
+
+  .carousel-container {
+    width: 260px;
+    height: 150px;
+  }
+
+  .carousel {
+    width: 1000px;
+  }
+  .carousel > div {
+    width: 320px;
+    height: 150px;
+  }
+
+  .carousel img{
+    width: 320px;
+    height: 150px;
+  }
+
+ 
+
+  @keyframes sliding {
+    30% {
+      transform: translateX(0);
+    }
+    35% {
+      transform: translateX(-320px);
+    }
+    65% {
+      transform: translateX(-320px);
+    }
+    70% {
+      transform: translateX(-640px);
+    }
+    98% {
+      transform: translateX(-640px);
+    }
+    100% {
+      transform: translateX(-320px);
+    }
+  }
+} 
+
+
+/* ---------------------------------------------------------------------------------------------- */
+
+
+  .box2{
+    width: auto;
+    
+  }
+
+
+   .container1{
+    
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,100px);
+    grid-template-columns: repeat(auto-fit,100px);
+    grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+  }
+    
+    .item{
+      align-items: center;
+      margin: 0 auto;
+      
+     }
+
+
+
+
+/* ================================================================================================= */
+  
+
+
+
+.box3{
+  width: auto;
+  height: auto;
+  /* background-color: rgb(241, 241, 241); */
+  background-color: rgb(243, 243, 243);
+
+  
+}
+
+.item.item1{
+  
+  border-radius: 5px;
+  width: 200px; 
+  height: 250px; 
+  margin-top: 25px;
+  margin-bottom: 30px;
+  background-color: white;
+  /* box-shadow: 2px  2px 10px  #f0f0f0 ; */
+  
+}
+
+/* ================================================================================================= */
+
+
+
+
+
+
+
+/* ============================================================================================================== */
+
+.box4{
+  height: 600px;
+  margin-top: 50px;
+  
+}
+
+.form-box {
+  width: 350px;
+  max-height: 550px;
+  padding: 30px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 2px  2px 10px rgb(194, 194, 194) ;
+  margin: 0 auto;
+  
+ 
+}
+form label{
+  margin-top: 15px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 2px;
+  margin:10px 10px 20px 0;
+}
+
+.btn-submit{
+  margin-top: 20px;
+  margin-left: 100px;
+  
+}
+
+/* ========================================================================================== */
+
+.box6{
+  height: 250px;
+  background-color: #3716ad;
+}
+  
+
+
+
+
+
+
+
+
+
+
+
+
