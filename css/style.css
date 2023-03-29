@@ -1,6 +1,5 @@
 
 body {
-  height: 2000px;
   scroll-behavior: smooth;
 }
 nav{
@@ -17,24 +16,7 @@ nav{
   border-radius: 5px;
  }
 
-.nav-item .nav-join-btn{
-  border: 1px solid #6a3cae;
-  border-radius: 10px;
-  color: #6a3cae;
-  background-color: white;
-  padding: 5px;
-  margin-left: 45px;
-}
-
-.nav-item .nav-join-btn:hover{
-    border: none;
-    border-radius: 10px;
-    color: white;
-    background-color: #6a3cae;
-
-}
-
-a:link {
+.nav-link{
   color: #6a3cae;
   text-decoration: none;
   letter-spacing: 0.15em;
@@ -43,27 +25,35 @@ a:link {
   margin-left: 50px;
   position: relative;
 }
-a:after {
-  background: none repeat scroll 0 0 transparent;
-  bottom: 0;
-  content: "";
-  display: block;
-  height: 2px;
-  left: 25%;
-  position: absolute;
-  background: #6a3cae;
-  transition: width 0.8s ease 0s, left 0.8s ease 0s;
-  width: 0;
+
+.nav-link:hover{
+  color: black;
+  text-transform: uppercase;
 }
-a:hover:after {
-  width: 100%;
-  left: 0;
+
+.join-link{
+  color: #ffffff;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  display: inline-block;
+  padding: 5px 10px;
+  margin-left: 50px;
+  position: relative;
+  border-radius: 5px;
+  background-color: #a73ce6;
 }
+
+.join-link:hover{
+  color: #a73ce6;
+  background-color: transparent;
+  border: 1px solid #a73ce6; 
+}
+
 
 /* --------------------------------------------------------------------------------   */
 .box1{
   padding: 15px;
-  background-image: linear-gradient(#5e1ebe,#8013b3,#9a1da5ee);
+  background-image: linear-gradient(#5e1ebe,#8e18c5,#ce00e0ee);
 }
 
 .main-h2{
@@ -78,7 +68,8 @@ a:hover:after {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.box1 .nav-join-btn{
+.box1 .join-link-box1{
+  width: fit-content;
   border-radius: 5px;
   background-color: white;
   padding: 5px 30px 5px 30px;
@@ -88,10 +79,11 @@ a:hover:after {
   margin-top: 30px;
   color: #4f00c5;
   font-weight: bold;
+  text-decoration: none;
   
 }
 
-.box1 .nav-join-btn:hover{
+.box1 .join-link-box1:hover{
   border: 1px solid white;
   border-radius: 10px;
   background-color: transparent;
@@ -232,9 +224,7 @@ a:hover:after {
     
   }
 
-
-   .container1{
-    
+  .container1{
     margin: 50px auto;
     display: grid;
     grid-template-columns: repeat(auto-fill,100px);
@@ -242,70 +232,182 @@ a:hover:after {
     grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
   }
     
-    .item{
+  .items{
       align-items: center;
       margin: 0 auto;
-      
+      width: 200px; 
+      height: 350px; 
+      margin-top: 20px;
+      padding: 2px;
      }
 
+  .items img{
+    width:175px;
+    height:175px;
+    border-radius: 50%;
+  }
+
+  .container1 .para{
+    text-align: center;
+    letter-spacing: 2px; 
+    font-size: small;
+    margin-top: 20px;
+  }
+
+  @media (max-width: 580px) {
+    .items{
+      margin: 50px auto;
+    }
+  }
 
 
 
 /* ================================================================================================= */
   
+.content-box{
+  background-color: #c200db;
+  height: 300px;
+
+}
 
 
+/*==================================================================================================== */
 
 .box3{
   width: auto;
   height: auto;
-  /* background-color: rgb(241, 241, 241); */
-  background-color: rgb(243, 243, 243);
+  background-color: rgb(255, 255, 255); 
+}
 
-  
+.box3 h3{
+  text-align: center;
+  font-family: serif;
+  padding: 25px;
+  color: black;
+  letter-spacing: 4px;
+  word-spacing: 0.5em;
+}
+
+.container-instrument{
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill,100px);
+  grid-template-columns: repeat(auto-fit,100px);
+  grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
 }
 
 .item.item1{
-  
-  border-radius: 5px;
   width: 200px; 
   height: 250px; 
-  margin-top: 25px;
-  margin-bottom: 30px;
-  background-color: white;
-  /* box-shadow: 2px  2px 10px  #f0f0f0 ; */
-  
+  margin: 10px auto 50px;
 }
+
+.item.item1 img{
+  width: 150px;
+  height: 150px;
+  margin-left: 25px;
+}
+
+.item.item1 h4{
+  font-family: sans-serif; 
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.item.item1 p{
+  text-align: center; 
+  font-size: smaller;
+  letter-spacing: 2px;
+}
+
 
 /* ================================================================================================= */
 
 
+.counts{
+  color: black;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 3px;
+  height: 400px;
+  overflow: hidden;
+  margin: 0;
+}
 
-
-
-
+.counter-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 200px;
+}
+.counter-container img{
+  color: white;
+  height: 80px;
+  width: 80px;
+}
+.counter-container span{
+  margin-top: 10px;
+}
+.counter {
+  font-size: 60px;
+  margin-top: 25px;
+}
+@media (max-width: 580px) {
+  .counts {
+    display: inline;
+    
+  }
+  .counter-container {
+    padding: 5px;
+    margin: 50px auto; 
+    border-radius: 5px;
+    
+  }
+  .counter-container img{
+    margin: 0 auto; 
+  }
+  .counter-container span{
+    margin: 0 auto; 
+  }
+  .counter {
+    margin: 10px auto; 
+  }
+}
 
 /* ============================================================================================================== */
 
 .box4{
-  height: 600px;
+  height: 750px;
   margin-top: 50px;
-  
+  background-image: linear-gradient(#5e1ebe,#8013b3,#9a1da5ee);
+  padding: 2px;
+  border-radius:10px 10px 0 0;
+}
+
+.box4 h3{
+  letter-spacing: 5px;
+  word-spacing: 0.5em;
+  text-align: center;
+  color: white;
+  margin-top: 10px;
 }
 
 .form-box {
   width: 350px;
-  max-height: 550px;
+  height: 600px;
   padding: 30px;
   background: white;
   border-radius: 10px;
   box-shadow: 2px  2px 10px rgb(194, 194, 194) ;
-  margin: 0 auto;
-  
- 
+  margin: 50px auto;
 }
+
 form label{
   margin-top: 15px;
+  padding: 2px;
 }
 
 input, textarea {
@@ -315,9 +417,17 @@ input, textarea {
 }
 
 .btn-submit{
-  margin-top: 20px;
+  margin-top: 25px;
   margin-left: 100px;
-  
+}
+
+.alert{
+  width: 100%;
+  border-radius: 5px;
+  color: #e203ff;
+  text-align: center;
+  letter-spacing: 2px;
+  display: none;
 }
 
 /* ========================================================================================== */
@@ -326,10 +436,6 @@ input, textarea {
   height: 250px;
   background-color: #3716ad;
 }
-  
-
-
-
 
 
 
