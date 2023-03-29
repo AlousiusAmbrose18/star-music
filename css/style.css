@@ -248,21 +248,10 @@ nav {
 }
 
 
-
-/* ================================================================================================= */
-
-.content-box {
-  background-color: #c200db;
-  height: auto;
-
-}
-
-
 /*==================================================================================================== */
 
 .box3 {
   width: auto;
-  height: auto;
   background-color: rgb(255, 255, 255);
 }
 
@@ -311,18 +300,28 @@ nav {
 
   .container-instrument .reveal {
     position: relative;
-    transform: translateX(150px);
+    transform: translateY(150px);
     opacity: 0;
-    transition: 1.5s all ease;
+    transition: 1.5s all none;
   }
 }
 
 
 /* ================================================================================================= */
 
+.content-box {
+  height: auto;
+}
+
+
+/* ================================================================================================= */
+
+
+
+
 
 .counts {
-  color: black;
+  color: rgb(0, 0, 0);
   font-family: Georgia, 'Times New Roman', Times, serif;
   display: flex;
   align-items: center;
@@ -331,6 +330,14 @@ nav {
   height: 400px;
   overflow: hidden;
   margin: 0;
+}
+
+.Achivements {
+  text-align: center;
+  font-family: serif;
+  padding: 20px;
+  color: #000000;
+  letter-spacing: 4px;
 }
 
 .counter-container {
